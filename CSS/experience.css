@@ -1,0 +1,83 @@
+.Data img {
+    width: 20%; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 5px; /* Adjust margin as needed */
+}
+
+.Data p {
+    margin: 10px 0; /* Reset default margin */
+}
+
+.description {
+    display: none; /* Hide description by default */
+    margin-top: 10px; /* Adjust margin as needed */
+    color: white; /* Change color of description text */
+}
+
+.description ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.description ol li {
+    margin-right: 10px; /* Add space between list items */
+}
+
+.heading {
+    display: flex;
+    align-items: center; /* Align items at the top */
+    margin-bottom: 20px; /* Add margin between each experience */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.experience-image {
+    width: 20%; /* Adjust image width as needed */
+    height: auto;
+    margin-right: 5%; /* Add margin between image and text */
+}
+
+.Data {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow Data div to grow */
+}
+
+.description {
+    display: none;
+    color: white;
+}
+
+.know-more-btn {
+    margin-top: 10px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.title hr {
+    margin: 0;
+    width: 65%;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .experience-image,
+    .Data img {
+        width: 40%; /* Adjust image width for smaller screens */
+        margin-right: 10px; /* Adjust margin */
+    }
+
+    .heading {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .title hr {
+        width: 100%; /* Make the hr full width */
+    }
+}
